@@ -1,0 +1,101 @@
+/* GENERAL STYLES */
+body.valentine-theme {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff0f5; /* Light pink background */
+    color: #b5651d; /* Dark chocolate color for text */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff1493; /* Deep pink for headers */
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    margin: 0;
+}
+
+header {
+    background-color: #ff69b4; /* Hot pink background */
+    padding: 20px 0;
+}
+
+/* MENU */
+nav {
+    background-color: #ff1493;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ff4500; /* Orange color for hover effect */
+}
+
+/* CONTAINER */
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.text-content {
+    background-color: #ffe4e1; /* Light pink background */
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ff69b4; /* Light pink color */
+}
+
+/* CANDY IMAGES */
+.image-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.candy-item {
+    background-color: #f8d7da; /* Light red background */
+    padding: 20px;
+    border-radius: 12px;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.candy-item .heart {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+    .text-content {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
