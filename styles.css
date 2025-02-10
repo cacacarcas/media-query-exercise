@@ -1,101 +1,111 @@
 /* GENERAL STYLES */
-body.valentine-theme {
+body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff0f5; /* Light pink background */
-    color: #b5651d; /* Dark chocolate color for text */
+    background-color: #ffebf0; /* Light pink background */
+    color: #f28f9c; /* Dark candy color for text */
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    font-size: 3rem;
-    color: #ff1493; /* Deep pink for headers */
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 20px;
-    margin: 0;
-}
-
 header {
-    background-color: #ff69b4; /* Hot pink background */
-    padding: 20px 0;
+    background-color: #ff66b2; /* Bright pink for the header */
+    text-align: center;
+    padding: 20px;
 }
 
-/* MENU */
+header h1 {
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+    cursor: pointer;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* NAVIGATION */
 nav {
-    background-color: #ff1493;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    background-color: #ff3399;
+    padding: 10px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
     margin: 0 10px;
     font-size: 18px;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #ff4500; /* Orange color for hover effect */
+    background-color: #ff0066;
 }
 
-/* CONTAINER */
-.container {
-    padding: 20px;
+/* SECTION STYLES */
+.section {
+    padding: 40px;
     text-align: center;
-}
-
-.text-content {
-    background-color: #ffe4e1; /* Light pink background */
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 h2 {
     font-size: 2rem;
-    color: #ff69b4; /* Light pink color */
+    color: #ff66b2;
 }
 
-/* CANDY IMAGES */
-.image-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+/* GALLERY STYLES */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
 }
 
-.candy-item {
-    background-color: #f8d7da; /* Light red background */
-    padding: 20px;
-    border-radius: 12px;
-    margin: 10px;
-    width: 150px;
+.gallery img {
+    width: 100%;
+    max-width: 250px; /* Limit the image width */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* FOOTER */
+footer {
+    background-color: #ff3399;
+    color: white;
+    padding: 10px;
     text-align: center;
-    font-size: 1.2rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.candy-item .heart {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
 }
 
 /* MOBILE STYLES */
 @media (max-width: 768px) {
-    .text-content {
-        padding: 15px;
+    header h1 {
+        font-size: 2.5rem;
     }
 
-    h2 {
-        font-size: 1.8rem;
+    nav {
+        flex-direction: column;
     }
 
-    nav a {
-        font-size: 16px;
-        padding: 8px 12px;
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section {
+        padding: 20px;
+    }
+}
+
+/* TABLET STYLES */
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

@@ -1,67 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Sweet Valentine</title>
-  <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Wonderland</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body class="valentine-theme">
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Welcome to Candy Wonderland!</h1>
+        <p>Your sweet escape into the world of candy.</p>
+    </header>
 
-  <!-- PAGE HEADER -->
-  <header class="header">
-    <h1>LOVE IS SWEET</h1>
-    <p class="desktop-message"><em>*You're reading this on desktop*</em></p>
-    <p class="tablet-message"><em>*You're reading this on a tablet*</em></p>
-    <p class="mobile-message"><em>*You're reading this on mobile*</em></p>
-  </header>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-  <!-- MENU -->
-  <nav class="nav">
-    <a href="#home">CANDY SHOP</a>
-    <a href="#about">LOVELY FOTOS</a>
-    <a href="#services">SERVICES</a>
-  </nav>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We bring you the sweetest treats and the most colorful candies! Come explore our candy wonderland, where every corner is filled with sweetness.</p>
+    </section>
 
-  <!-- TEXT -->
-  <div class="container">
-    <div class="text-content">
-      <h2>Sweet as Candy</h2>
-      <p>
-        Love and candy go hand in hand, especially on Valentine’s Day! Let these sweet treats be the perfect way to express your feelings.
-        Whether you're enjoying a box of chocolates or sharing candy hearts, these little bites of joy bring sweetness to any occasion.
-      </p>
-    </div>
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="section">
+        <h2>Candy Gallery</h2>
+        <div class="gallery">
+            <img src="candie.png" alt="Candy 1">
+            <img src="bean.png" alt="Candy 2">
+            <img src="worm.png" alt="Candy 3">
+            <img src="bear.png" alt="Candy 4">
+        </div>
+    </section>
 
-    <!-- CANDY IMAGES (using emojis as placeholders) -->
-    <div class="image-content">
-      <div class="image-grid">
-        <div class="candy-item"><span class="heart">❤️</span><p>Candy 1</p></div>
-        <div class="candy-item"><span class="heart">🍬</span><p>Candy 2</p></div>
-        <div class="candy-item"><span class="heart">🍭</span><p>Candy 3</p></div>
-        <div class="candy-item"><span class="heart">🍫</span><p>Candy 4</p></div>
-        <div class="candy-item"><span class="heart">🍬</span><p>Candy 5</p></div>
-        <div class="candy-item"><span class="heart">💝</span><p>Candy 6</p></div>
-        <div class="candy-item"><span class="heart">🍫</span><p>Candy 7</p></div>
-        <div class="candy-item"><span class="heart">🍬</span><p>Candy 8</p></div>
-        <div class="candy-item"><span class="heart">💖</span><p>Candy 9</p></div>
-      </div>
-    </div>
-  </div>
+    <!-- FOOTER -->
+    <footer id="contact">
+        <p>Contact us at: candywonderland@example.com</p>
+    </footer>
 
-  <script>
-    let title = document.querySelector("h1");
-    title.innerText = "Valentine’s Day Sweetness";
-
-    let changeButton = document.querySelector("#change");
-    changeButton.addEventListener("click", function check() {
-      console.log("clicked!");
-      title.innerText = "Happy Valentine’s Day!";
-      title.style.color = "pink";
-      title.style.border = "solid 2px red";
-      title.classList.add("bg");
-    });
-  </script>
-
+    <!-- JavaScript for interactivity -->
+    <script>
+        // Change header text on click
+        const header = document.querySelector('header h1');
+        header.addEventListener('click', () => {
+            header.innerText = 'Candy Wonderland - Sweetness Awaits!';
+            header.style.color = 'pink';
+        });
+    </script>
 </body>
 </html>
